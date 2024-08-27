@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Three js Test Task E</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .text-container {
+        position: fixed;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+        font-family: sans-serif;
+        pointer-events: none;
+      }
+
+      .text-container>div {
+        flex: 0 0 7rem;
+      }
+
+      .blue {
+        color: #4763ad
+      }
+
+      .red {
+        color: #ff1155;
+      }
+
+      .gray {
+        color: #777788;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <canvas id="canvas"></canvas>
+    <div class="text-container">
+      <div class="blue">Blue: <span id="pos-a"></span></div>
+      <div class="red">Red: <span id="pos-b"></span></div>
+      <div class="gray">Gray: <span id="pos-c"></span></div>
+    </div>
+
+    <script type="importmap">
+            {
+              "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.167.1/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.167.1/examples/jsm/"
+              }
+            }
+          </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/20.0.0/tween.umd.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+
+</html>
