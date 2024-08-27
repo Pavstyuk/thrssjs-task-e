@@ -1,7 +1,6 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import Stats from 'https://cdnjs.cloudflare.com/ajax/libs/stats.js/17/Stats.js';
-import { CSS2DRenderer } from 'three/addons/renderers/CSS2DRenderer.js';
 
 
 let width, height;
